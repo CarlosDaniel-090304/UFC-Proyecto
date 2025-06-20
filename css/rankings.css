@@ -1,0 +1,54 @@
+.contenedor-rankings{
+    margin-top: 70px;
+}
+
+.contenedor-rankings h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-top: 30px;
+}
+
+#rankings-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1500px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.categoria {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.categoria h2 {
+    font-size: 1.2rem;
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+
+.categoria p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.categoria ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 0.9rem;
+    overflow-y: auto;
+    max-height: 550px;
+}
+
+.categoria li {
+    padding: 4px 0;
+    border-bottom: 1px solid #ccc;
+}

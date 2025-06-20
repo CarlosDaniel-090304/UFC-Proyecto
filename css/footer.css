@@ -1,0 +1,38 @@
+/* ========FOOTER======== */
+.footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    background-color: #000;
+    border-top: 1px solid #000;
+}
+
+.imagen-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.imagen-footer img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.contacto-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12%;
+    height: 100%;
+    font-size: 9px;
+    color: #fff;
+    cursor: pointer;
+}

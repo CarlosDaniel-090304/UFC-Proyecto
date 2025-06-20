@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>UFC | Pagina Principal</title>
+    <link rel="icon" href="img/UFC-LOGO.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/carousel.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/tendencias.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <!-- Navbar-1 -->
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="view/rankings.html">RANKINGS</a></li>
+                <li><a href="view/Peleadores.html">PELEADORES</a></li>
+            </ul>
+        </div>
+
+        <!-- Titulo -->
+        <div class="titulo">
+            <img src="img/UFC-LOGO.png" alt="UFC">
+        </div>
+
+        <!-- Navbar-2 -->
+        <div class="navbar">
+            <ul>
+                <li><a href="https://www.instagram.com/ufc/" target="_blank">INSTAGRAM</a></li>
+                <li><a href="https://www.youtube.com/@ufcespanol/videos" target="_blank">VIDEOS</a></li>
+                <li><a href="https://www.ufcstore.com/en/?_s=bm-ufccom-Main-Navigation-ES" target="_blank">TIENDA</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- CARRUSEL -->
+    <div class="carousel">
+        <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-slide slide1">
+                <div class="contenedor-botones">
+                    <button class="btn btn-secondary btn-Jamahal-Rountree" data-url="https://www.ufcespanol.com/event/ufc-fight-night-june-21-2025">COMO VER</button>
+                </div>
+            </div>
+            <div class="carousel-slide slide2">
+                <div class="contenedor-botones">
+                    <button class="btn btn-secondary btn-Topuria-Oliveira" data-url="https://www.ufcespanol.com/event/ufc-317">COMO VER</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flechas de navegación -->
+        <button class="carousel-arrow left" onclick="prevSlide()">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-arrow right" onclick="nextSlide()">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div class="carousel-nav">
+            <button class="carousel-btn active" onclick="moveToSlide(0)"></button>
+            <button class="carousel-btn" onclick="moveToSlide(1)"></button>
+        </div>
+    </div>
+
+    <!-- TENDENCIAS -->
+    <div class="tendencias">
+        <h1>TENDENCIAS</h1>
+        <div class="section-1">
+            <div class="contenedor-tendencias ct-1"
+                data-url="https://www.dazn.com/es-ES/news/mma/ilia-topuria-peso-ligero-ufc-por-que-deja-ser-campeon-peso-pluma-principales-reglas-esta-division-quien-es-actual-campeon/4jz300mmvcwv1ie44mgq9xag4">
+                <h2>TOPURIA SUBE A PESO LIGERO</h2>
+            </div>
+            <div class="contenedor-tendencias ct-2" data-url="https://www.clarosports.com/ufc/alex-pereira-busca-una-revancha-con-magomed-ankalaev/">
+                <h2>PEREIRA BUSCA REVANCHA</h2>
+            </div>
+            <div class="contenedor-tendencias ct-3" data-url="https://www.playstation.com/es-pe/games/ea-sports-ufc/">
+                <h2>UFC 5 TRAE EL REALISMO AL OCTÁGONO</h2>
+            </div>
+            <div class="contenedor-tendencias ct-4" data-url="https://www.marca.com/combates-ufc/2025/04/15/amanda-nunes-volvera-pelear-ufc-regreso-goat.html">
+                <h2>EL REGRESO DE AMANDA NUNES</h2>
+            </div>
+        </div>
+
+        <div class="section-2">
+            <div class="contenido img-1" data-url="https://www.espn.com.gt/mma/nota?_slug_=jon-jones-pereira-aspinall-ufc&id=14416434">
+                <h2>JON JONES RECHAZA LA OFERTA DE UFC PARA PELEAR CON TOM ASPINALL</h2>
+            </div>
+            <div class="contenido img-2" data-url="https://www.marca.com/combates-ufc/2025/05/22/mensaje-oliveira-ilia-topuria-noquear-tipo.html">
+                <h2> CHARLES OLIVEIRA DICE QUE PUEDE NOQUEAR A ILIA TOPURIA</h2>
+            </div>
+        </div>
+
+        <h1 class="patrocinadores">PATROCINADORES</h1>
+        <div class="section-3">
+            <div class="ufc-stake" data-url="https://airestech.com/?utm_source=UFC&utm_medium=ROS&utm_campaign=Maycee_Chandler">
+                <img src="/img/Patrocinador.png" alt="UFC AIRES">
+            </div>
+            <div class="ufc-aviator" data-url="https://spribe.co/welcome">
+                <img src="/img/ufc-aviator.png" alt="UFC AVIATOR">
+            </div>
+        </div>
+    </div>
+
+    <!-- VER MAS -->
+    <div class="ver-mas">
+        <div class="contenedor-verMas">
+            <button class="boton-verMas btn-verMas" data-url="https://www.ufcespanol.com/trending/all">
+                <span>VER MÁS &#x25BC;</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="imagen-footer">
+            <img src="img/UFC-LOGO.png" alt="UFC">
+        </div>
+
+        <div class="contacto-footer" data-url="https://www.ufcespanol.com/faq">
+            <h1>CONTACTO</h1>
+        </div>
+    </div>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/8bd2ed292e.js" crossorigin="anonymous"></script>
+
+    <!-- SCRIPT -->
+    <script src="js/carousel.js"></script>
+    <script src="js/url.js"></script>
+</body>
+
+</html>
